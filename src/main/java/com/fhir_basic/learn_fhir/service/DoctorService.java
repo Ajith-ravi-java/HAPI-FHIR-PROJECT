@@ -22,6 +22,7 @@ public class DoctorService {
         response.setLastName(practitioner.getName().get(0).getFamily());
         response.setSpecialization("General");
 
+        
         doctorRepository.save(response);
         return response;
     }
